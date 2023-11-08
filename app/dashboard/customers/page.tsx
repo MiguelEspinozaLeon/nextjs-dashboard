@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Page() {
   return (
-    <div>Customer's page</div>
+    <div>Customers page</div>
   )
 }
