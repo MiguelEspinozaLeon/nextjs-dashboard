@@ -3,7 +3,7 @@ import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import { fetchLatestInvoices} from '../../lib/data';
 
-import { Suspense } from 'react';
+import { Suspense} from 'react';
 import { CardsSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
 import CardWrapper from '@/app/ui/dashboard/cards';
  
@@ -11,6 +11,8 @@ export default async function Page() {
 
     
     const latestInvoices = await fetchLatestInvoices()
+
+    
     
 
   return (
