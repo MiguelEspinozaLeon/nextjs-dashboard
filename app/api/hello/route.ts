@@ -1,9 +1,10 @@
+import { NextResponse } from "next/server"
+
 export async function GET(){
-    return Response.json({message: 'Hello'})
+    return NextResponse.json({message: 'Hello'})
 }
 
 export async function POST(request: Request){
     const data = await request.json()
-    console.log(data.name)
-    return Response.json(data)
+    return NextResponse.json({data})
 }
